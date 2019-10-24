@@ -1,0 +1,47 @@
+title:             kuczorski.pl
+email:             arkadiusz@kuczorski.pl
+description:       Two drivers behind cloud computing (r)evolution
+author:            Arkadiusz Kuczorski
+baseurl:           ""
+url:               "https://kuczorski.pl"
+
+
+# Reading time
+words_per_minute:  170
+
+# Social Profiles
+twitter_username:  akuczorski
+github_username:   akuczorski
+facebook_username: arkadiusz.kuczorski
+linkedin_username: arkadiusz-kuczorski
+stack-overflow_username: arkadiusz-kuczorski?tab=profile
+linuxfoundation_username: akuczorski
+youtube_username: UCeLgoj9YvK1sAzitc4KLDxg
+
+# Build settings
+markdown:          kramdown
+paginate:          10
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+
+permalink: /:categories/:title/
+
+sass:
+    style: :compressed
+
+
+jekyll-archives:
+  enabled:
+  - tags
+  layout: 'archive'
+  layouts:
+    tag: tag-archive-layout
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
